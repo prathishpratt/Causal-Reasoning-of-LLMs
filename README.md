@@ -1,5 +1,7 @@
 # Evaluating Causal Reasoning in Large Language Models: Do LLMs understand causality?
 
+**Authors**: Aseem Dandgaval, Dinesh Karthikeyan, Nandita Sanjivi, Prathish Murugan
+
 ---
 
 This study assesses the ability of Large Language Models (LLMs) to perform formal causal reasoning, employing the comprehensive CLadder dataset as a testbed. Despite their extensive application across various domains of natural language processing, LLMs' competence in handling formal causal queries has not been thoroughly explored. Our research aims to determine whether LLMs can interpret and respond to complex causal inquiries in a manner consistent with human reasoning paradigms.
