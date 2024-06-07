@@ -1,20 +1,3 @@
-
-
-# CLadder: Evaluating Causal Reasoning in Language Models
-
-Developed by: Zhijing Jin, Yuen Chen, Felix Leeb, Luigi Gresele, Ojasv Kamal, Zhiheng LYU, Kevin Blin, Fernando Gonzalez Adauto, Max Kleiman-Weiner, Mrinmaya Sachan, Bernhard Schölkopf
-
-- Version: v1
-- Date: 2023-05-25
-
-
-This directory contains the full CLadder dataset for evaluating (formal) causal reasoning in language models. The dataset asks yes/no questions in natural language that generally require statistical and causal inference to answer.
-
-Although there are several different variants, the main dataset (including questions from all variants) is `cladder-v1-balanced.json`, so that is the recommended file to use for most purposes.
-
-You can find more information, including all the code used to generate this dataset, at: https://github.com/causalNLP/cladder
-
-
 ## Data Usage
 
 
