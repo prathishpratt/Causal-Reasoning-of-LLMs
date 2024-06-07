@@ -73,42 +73,21 @@ Here the correct answer is `no`. The associated reasoning steps found in the `re
 
 Note that in addition to the `background` field, the model information found in `cladder-v1-meta-models.json` contains sufficient information to fully reconstruct the underlying causal model used to generate this question (and 59 others).
 
-### Dataset Statistics
 
-Here are some basic statistics for the main dataset (`cladder-v1-balanced.json`).
+---
+#### Special Thanks
+"**[CLadder: Assessing Causal Reasoning in Language Models](http://arxiv.org/abs/2312.04350)**" by *Zhijing Jin\*, Yuen Chen\*, Felix Leeb\*, Luigi Gresele\*, Ojasv Kamal, Zhiheng Lyu, Kevin Blin, Fernando Gonzalez, Max Kleiman-Weiner, Mrinmaya Sachan, Bernhard Schölkopf*.
 
-Number of questions: 10,112
-Answers: {"yes": 5,056, "no": 5,056}
+**Citation:**
 
-Query Types:
+```bibTeX
+@inproceedings{jin2023cladder,
+    author = {Zhijing Jin and Yuen Chen and Felix Leeb and Luigi Gresele and Ojasv Kamal and Zhiheng Lyu and Kevin Blin and Fernando Gonzalez and Max Kleiman-Weiner and Mrinmaya Sachan and Bernhard Sch{\"{o}}lkopf},
+    title = "{CL}adder: {A}ssessing Causal Reasoning in Language Models",
+    year = "2023",
+    booktitle = "NeurIPS",
+    url = "https://openreview.net/forum?id=e2wtjx0Yqu",
+}
+```
 
-| Query Type                             | Rung | Code               | Number | Percent |
-| -------------------------------------- | ---- | ------------------ | ------ | ------- |
-| Correlation                            | 1    | correlation        | 1422   | 14.1%   |
-| Marginal Distribution                  | 1    | marginal           | 1580   | 15.6%   |
-| Expaining Away Effect                  | 1    | exp_away           | 158    | 1.6%    |
-| Average Treatment Effect               | 2    | ate                | 1422   | 14.1%   |
-| Backdoor Adjustment Set                | 2    | backadj            | 1580   | 15.6%   |
-| Collider Bias                          | 2    | collider_bias      | 158    | 1.6%    |
-| Effect of the Treatment on the Treated | 3    | ett                | 1264   | 12.5%   |
-| Natural Direct Effect                  | 3    | nde                | 316    | 3.1%    |
-| Natural Indirect Effect                | 3    | nie                | 790    | 7.8%    |
-| Counterfactual (deterministic)         | 3    | det-counterfactual | 1422   | 14.1%   |
-
-
-Graph Types:
-
-| Graph Type  | Number | Percent |
-| ----------- | ------ | ------- |
-| IV          | 790    | 7.8%    |
-| arrowhead   | 1264   | 12.5%   |
-| chain       | 1106   | 10.9%   |
-| collision   | 632    | 6.2%    |
-| confounding | 948    | 9.4%    |
-| diamond     | 1106   | 10.9%   |
-| diamondcut  | 948    | 9.4%    |
-| fork        | 948    | 9.4%    |
-| frontdoor   | 1106   | 10.9%   |
-| mediation   | 1264   | 12.5%   |
-
-
+---
